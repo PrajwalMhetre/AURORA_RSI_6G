@@ -18,7 +18,6 @@ from sionna.rt import (
     PlanarArray,
     Transmitter,
     Receiver,
-    PathSolver,
 )
 
 
@@ -47,7 +46,6 @@ def create_wireless_scene():
 
     scene = load_scene(
         sionna.rt.scene.simple_street_canyon,
-        merge_shapes=False,
     )
 
     return scene
@@ -102,7 +100,6 @@ def configure_wireless_system(scene):
     base_station = Transmitter(
         name="base_station",
         position=BS_POSITION,
-        display_radius=2,
     )
 
     scene.add(base_station)
@@ -114,7 +111,6 @@ def configure_wireless_system(scene):
     user_1 = Receiver(
         name="user_1",
         position=USER_1_POSITION,
-        display_radius=1,
     )
 
     scene.add(user_1)
@@ -126,7 +122,6 @@ def configure_wireless_system(scene):
     user_2 = Receiver(
         name="user_2",
         position=USER_2_POSITION,
-        display_radius=1,
     )
 
     scene.add(user_2)
@@ -144,20 +139,12 @@ def compute_propagation_paths(scene):
     the transmitter and receivers.
     """
 
-    path_solver = PathSolver(
-        deterministic=True,
-    )
-
-    paths = path_solver(
-        scene=scene,
+    paths = scene.compute_paths(
         max_depth=MAX_PATH_DEPTH,
         los=True,
-        specular_reflection=True,
-        diffuse_reflection=False,
-        refraction=True,
+        reflection=True,
         diffraction=False,
-        synthetic_array=True,
-        seed=42,
+        scattering=False,
     )
 
     return paths

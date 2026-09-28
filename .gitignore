@@ -1,0 +1,10 @@
+.venv/
+.venv-sionna019/
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.idea/
+.vscode/
+simulation/dataset/output/*.h5
+simulation/dataset/output/*.png
