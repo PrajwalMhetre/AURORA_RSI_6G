@@ -1,0 +1,152 @@
+{
+  "baseline_sum_rate": {
+    "shape": [],
+    "dtype": "float32"
+  },
+  "blockage": {
+    "shape": [
+      5,
+      2
+    ],
+    "dtype": "int8"
+  },
+  "continuous_optimal_phase": {
+    "shape": [
+      64
+    ],
+    "dtype": "float32"
+  },
+  "csi_bs_ris": {
+    "shape": [
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "csi_bs_ris_true": {
+    "shape": [
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "csi_bs_user": {
+    "shape": [
+      2,
+      5
+    ],
+    "dtype": "complex64"
+  },
+  "csi_bs_user_true": {
+    "shape": [
+      2,
+      5
+    ],
+    "dtype": "complex64"
+  },
+  "csi_error_pct": {
+    "shape": [
+      5
+    ],
+    "dtype": "float32"
+  },
+  "csi_ris_user": {
+    "shape": [
+      2,
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "csi_ris_user_true": {
+    "shape": [
+      2,
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "optimal_sinr": {
+    "shape": [
+      2
+    ],
+    "dtype": "float32"
+  },
+  "optimal_sum_rate": {
+    "shape": [],
+    "dtype": "float32"
+  },
+  "phase_resolution_bits": {
+    "shape": [],
+    "dtype": "int8"
+  },
+  "random_seed": {
+    "shape": [],
+    "dtype": "int32"
+  },
+  "sequence_id": {
+    "shape": [],
+    "dtype": "int32"
+  },
+  "snr_db": {
+    "shape": [
+      5
+    ],
+    "dtype": "float32"
+  },
+  "target_phase": {
+    "shape": [
+      64
+    ],
+    "dtype": "float32"
+  },
+  "target_phase_sin_cos": {
+    "shape": [
+      64,
+      2
+    ],
+    "dtype": "float32"
+  },
+  "throughput": {
+    "shape": [],
+    "dtype": "float32"
+  },
+  "true_csi_bs_ris": {
+    "shape": [
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "true_csi_bs_user": {
+    "shape": [
+      2,
+      5
+    ],
+    "dtype": "complex64"
+  },
+  "true_csi_ris_user": {
+    "shape": [
+      2,
+      5,
+      64
+    ],
+    "dtype": "complex64"
+  },
+  "user_position": {
+    "shape": [
+      5,
+      2,
+      3
+    ],
+    "dtype": "float32"
+  },
+  "user_velocity": {
+    "shape": [
+      5,
+      2,
+      3
+    ],
+    "dtype": "float32"
+  }
+}
